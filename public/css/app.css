@@ -10916,8 +10916,8 @@ body {
   transform-origin: bottom right;
   -webkit-clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
           clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
-  -webkit-animation: grow 2s;
-          animation: grow 2s;
+  -webkit-animation: grow 1s;
+          animation: grow 1s;
 }
 
 @-webkit-keyframes grow {

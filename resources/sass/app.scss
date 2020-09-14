@@ -13,7 +13,6 @@ html,body{
 }
 
 .triangle{
-
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -22,7 +21,7 @@ html,body{
     background-color: $darkBg;
     transform-origin: bottom right;
     clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
-    animation: grow 2s;
+    animation: grow 1s;
 }
 @keyframes grow {
     from{

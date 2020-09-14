@@ -19,7 +19,7 @@
         },
         created() {
             setTimeout(() => this.triangleVisible = true, 4000);
-            setTimeout(() => this.navVisible = true, 6000);
+            setTimeout(() => this.navVisible = true, 5500);
         }
     }
 </script>

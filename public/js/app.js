@@ -2004,7 +2004,7 @@ __webpack_require__.r(__webpack_exports__);
     }, 4000);
     setTimeout(function () {
       return _this.navVisible = true;
-    }, 6000);
+    }, 5500);
   }
 });
 
