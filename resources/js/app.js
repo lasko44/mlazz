@@ -11,6 +11,7 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('tri-nav', require('./components/NavTri').default);
 Vue.component('home', require('./components/Home').default);
+Vue.component('comp-nav', require('./components/CompNav').default);
 
 const app = new Vue({
     el: '#app',

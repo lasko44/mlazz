@@ -32,6 +32,40 @@ html,body{
     }
 }
 
+.comp-triangle{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $darkBg;
+    transform-origin: top right;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
+    animation: slide 500ms;
+}
+
+@keyframes slide{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.compass{
+    position: absolute;
+    left: 80vw;
+}
+.compass:hover{
+    cursor: pointer;
+}
+
+.compass-rotate-left {
+    transform: rotate(-90deg);
+    transition: transform  1s linear;
+}
+
 
 .home, .title{
     max-width: 90vw;
@@ -71,7 +105,7 @@ html,body{
 }
 
 .m-nav{
-    color:$navFont;
+    color:$mainBg;
     position: absolute;
     display: inline-block;
     top: 35vh;
@@ -82,7 +116,7 @@ html,body{
         margin-bottom: 6px;
     }
     a{
-        color:$navFont;
+        color:$mainBg;
     }
     a:hover{
         text-decoration: none;

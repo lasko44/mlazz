@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-show="triangleVisible" class="triangle"></div>
-        <ul v-show ="navVisible" class="m-nav">
+        <ul class="m-nav">
             <li><a href="/about">About Me</a></li>
             <li>Projects</li>
             <li>Resumé</li>
@@ -18,8 +18,8 @@
             }
         },
         created() {
-            setTimeout(() => this.triangleVisible = true, 4000);
-            setTimeout(() => this.navVisible = true, 5500);
+            setTimeout(() => this.triangleVisible = true, 500);
+
         }
     }
 </script>
