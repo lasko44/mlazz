@@ -14,5 +14,7 @@ use App\Http\Controllers\WebController;
 |
 */
 
-Route::get('/', [WebController::class,'indexHome']);
-Route::get('/about',[WebController::class, 'indexAbout']);
+Route::get('/', [WebController::class,'indexHome'])->name('home');
+Route::get('/about',[WebController::class, 'indexAbout'])->name('about');
+Route::get('/projects',[WebController::class, 'indexProjects',])->name('projects');
+Route::get('/projects/{project}', [WebController::class, 'showProject'])->name('project.show');

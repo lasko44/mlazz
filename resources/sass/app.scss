@@ -1,4 +1,5 @@
-
+//Fontawesome
+@import "node_modules/font-awesome/scss/font-awesome.scss";
 
 // Variables
 @import 'variables';
@@ -11,9 +12,48 @@ html,body{
     font-family: 'Source Code Pro', monospace;
     overflow-x: hidden;
 }
+.about-section{
+    width: 100vw;
+    border: thin solid $darkBg;
+    animation: fadeIn 1s;
+    p{
+        margin-left: 4vw;
+        margin-right: 4vw ;
+        font-size: 1.125rem;
+        padding: 15px;
+    }
+    h3{
+        margin-left: 4vw;
+        margin-right: 4vw ;
+        padding: 15px 0 0 15px;
+
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dark{
+    background-color: $darkBg;
+    color: $mainBg;
+}
+
+
+.page-content{
+    margin-top: 25vh;
+    width: 100vw;
+}
 
 .triangle{
-    position: absolute;
+    position: fixed;
+    top:0;
+    right: 0;
     height: 100vh;
     width: 100vw;
     min-height: 100vh;
@@ -21,7 +61,7 @@ html,body{
     background-color: $darkBg;
     transform-origin: bottom right;
     clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
-    animation: grow 1s;
+    animation: grow 500ms;
 }
 @keyframes grow {
     from{
@@ -32,29 +72,30 @@ html,body{
     }
 }
 
-.comp-triangle{
-    position: absolute;
+.hide-triangle{
+    position: fixed;
     height: 100vh;
     width: 100vw;
     min-height: 100vh;
     min-width: 100vw;
     background-color: $darkBg;
-    transform-origin: top right;
+    transform-origin: bottom right;
     clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
-    animation: slide 500ms;
+    animation: slide 500ms forwards;
 }
 
 @keyframes slide{
     from{
-        transform: scale(0);
+        transform: scale(1);
     }
     to{
-        transform: scale(1);
+        transform: scale(0);
     }
 }
 
 .compass{
-    position: absolute;
+    position: fixed;
+    top:4vh;
     left: 80vw;
 }
 .compass:hover{
@@ -63,9 +104,13 @@ html,body{
 
 .compass-rotate-left {
     transform: rotate(-90deg);
-    transition: transform  1s linear;
+    transition: transform  500ms linear;
 }
 
+.compass-rotate-right {
+    transform: rotate(0deg);
+    transition: transform 300ms linear;
+}
 
 .home, .title{
     max-width: 90vw;
@@ -104,9 +149,30 @@ html,body{
     50% { border-color: black; }
 }
 
+.header{
+    position: absolute;
+    top:10vh;
+    left:4vw;
+    h1{
+        display:inline-block;
+        font-size: 2.2rem;
+        overflow: hidden;
+        border-right:  .2em solid  black;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .13em;
+        animation:
+            blink-caret .75s step-end infinite;
+    }
+}
+
+.footer{
+    height: 15vh;
+}
+
 .m-nav{
     color:$mainBg;
-    position: absolute;
+    position: fixed;
     display: inline-block;
     top: 35vh;
     left: 80vw;
