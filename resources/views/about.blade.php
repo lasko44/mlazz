@@ -8,7 +8,7 @@
     <page-title :title="'About Me'"></page-title>
     <div class="page-content">
         <div class="row justify-content-center">
-            <img class="img img-fluid" style="margin-bottom: 10px;" src="{{asset('images/hero.png')}}" alt="about Matt Laszkiewicz" width="700"/>
+            <img class="a-1 img-fluid" style="margin-bottom: 10px;" src="{{asset('images/hero.png')}}" alt="about Matt Laszkiewicz" width="700"/>
         </div>
         <div class="about-section dark">
             <h3>My Journey to Programming</h3>
@@ -22,7 +22,7 @@
                 est laborum.</p>
         </div>
         <div class="row justify-content-center" style="margin-top: 25px;">
-            <img class="img img-fluid" src="{{asset('images/plate.png')}}" alt="about Matt Laszkiewicz" width="600"/>
+            <img class=" a-2 img-fluid" src="{{asset('images/plate.png')}}" alt="about Matt Laszkiewicz" width="600"/>
         </div>
         <div class="about-section dark">
             <h3>Outside of Programming</h3>

@@ -13999,6 +13999,26 @@ body {
   width: 100vw;
 }
 
+.m-card {
+  width: 30vw;
+  height: 40vh;
+  margin: 15px;
+  -webkit-animation: fadeIn 400ms;
+          animation: fadeIn 400ms;
+  position: relative;
+}
+
+.m-card h4 {
+  margin: auto;
+}
+
+.middle {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+}
+
 .triangle {
   position: fixed;
   top: 0;
@@ -14013,6 +14033,7 @@ body {
           clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
   -webkit-animation: grow 500ms;
           animation: grow 500ms;
+  z-index: 1;
 }
 
 @-webkit-keyframes grow {
@@ -14045,6 +14066,7 @@ body {
   transform-origin: bottom right;
   -webkit-clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
           clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
+  z-index: 1;
   -webkit-animation: slide 500ms forwards;
           animation: slide 500ms forwards;
 }
@@ -14073,6 +14095,7 @@ body {
   position: fixed;
   top: 4vh;
   left: 80vw;
+  z-index: 1;
 }
 
 .compass:hover {
@@ -14082,11 +14105,13 @@ body {
 .compass-rotate-left {
   transform: rotate(-90deg);
   transition: transform 500ms linear;
+  z-index: 1;
 }
 
 .compass-rotate-right {
   transform: rotate(0deg);
   transition: transform 300ms linear;
+  z-index: 1;
 }
 
 .home,
@@ -14185,6 +14210,9 @@ body {
   display: inline-block;
   top: 35vh;
   left: 80vw;
+  z-index: 1;
+  -webkit-animation: fadeIn 1000ms;
+          animation: fadeIn 1000ms;
 }
 
 .m-nav li {

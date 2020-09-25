@@ -50,6 +50,32 @@ html,body{
     width: 100vw;
 }
 
+.m-card{
+    width: 30vw;
+    height: 40vh;
+    margin: 15px;
+    animation: fadeIn 400ms;
+    position: relative;
+    h4{
+        margin:auto;
+    }
+
+}
+.a-1{
+    max-height: 290px;
+}
+
+.a-2{
+    max-height: 370px;
+}
+.middle{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:33%;
+}
+
+
 .triangle{
     position: fixed;
     top:0;
@@ -62,6 +88,7 @@ html,body{
     transform-origin: bottom right;
     clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
     animation: grow 500ms;
+    z-index: 1;
 }
 @keyframes grow {
     from{
@@ -81,6 +108,7 @@ html,body{
     background-color: $darkBg;
     transform-origin: bottom right;
     clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
+    z-index: 1;
     animation: slide 500ms forwards;
 }
 
@@ -97,6 +125,7 @@ html,body{
     position: fixed;
     top:4vh;
     left: 80vw;
+    z-index: 1;
 }
 .compass:hover{
     cursor: pointer;
@@ -105,11 +134,13 @@ html,body{
 .compass-rotate-left {
     transform: rotate(-90deg);
     transition: transform  500ms linear;
+    z-index: 1;
 }
 
 .compass-rotate-right {
     transform: rotate(0deg);
     transition: transform 300ms linear;
+    z-index: 1;
 }
 
 .home, .title{
@@ -166,6 +197,8 @@ html,body{
     }
 }
 
+
+
 .footer{
     height: 15vh;
 }
@@ -176,6 +209,8 @@ html,body{
     display: inline-block;
     top: 35vh;
     left: 80vw;
+    z-index: 1;
+    animation: fadeIn 1000ms;
     li{
         list-style: none;
         font-size: 1.3rem;

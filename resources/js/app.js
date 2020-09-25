@@ -13,6 +13,7 @@ Vue.component('tri-nav', require('./components/NavTri').default);
 Vue.component('home', require('./components/Home').default);
 Vue.component('comp-nav', require('./components/CompNav').default);
 Vue.component('page-title', require('./components/HeaderComponent').default);
+Vue.component('project-card', require('./components/ProjectComponent').default);
 
 const app = new Vue({
     el: '#app',
