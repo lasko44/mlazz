@@ -20,4 +20,16 @@ class WebController extends Controller
     public function indexProjects(){
         return view('projects');
     }
+
+    public function showCav(){
+        return view('cav');
+    }
+
+    public function showDC(){
+        return view('dc');
+    }
+
+    public function showOther(){
+        return view('other');
+    }
 }

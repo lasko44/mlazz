@@ -14012,6 +14012,28 @@ body {
   margin: auto;
 }
 
+.m-card-img {
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+.m-card-link:hover {
+  cursor: pointer;
+}
+
+.m-card-link:hover img {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.a-1 {
+  max-height: 290px;
+}
+
+.a-2 {
+  max-height: 370px;
+}
+
 .middle {
   text-align: center;
   position: absolute;
@@ -14067,8 +14089,8 @@ body {
   -webkit-clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
           clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
   z-index: 1;
-  -webkit-animation: slide 500ms forwards;
-          animation: slide 500ms forwards;
+  -webkit-animation: slide 1000ms forwards;
+          animation: slide 1000ms forwards;
 }
 
 @-webkit-keyframes slide {

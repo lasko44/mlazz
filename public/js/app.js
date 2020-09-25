@@ -2089,7 +2089,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['image', 'title']
+  props: ['image', 'title', 'link']
 });
 
 /***/ }),
@@ -37955,27 +37955,17 @@ var render = function() {
         _c("h4", [_vm._v(_vm._s(_vm.title))])
       ]),
       _vm._v(" "),
-      _c("img", {
-        staticClass: "img img-fluid",
-        attrs: { src: _vm.image, alt: "" }
-      }),
-      _vm._v(" "),
-      _vm._m(0)
+      _c("a", { staticClass: "m-card-link", attrs: { href: _vm.link } }, [
+        _c("img", {
+          staticClass: "m-card-img img img-fluid",
+          staticStyle: { "margin-top": "10px" },
+          attrs: { src: _vm.image, alt: "" }
+        })
+      ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "middle" }, [
-      _c("p", { staticClass: "btn btn-dark card-text" }, [
-        _vm._v(" View Details")
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
