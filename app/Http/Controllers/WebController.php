@@ -22,7 +22,7 @@ class WebController extends Controller
     }
 
     public function indexResume(){
-
+        return view('resume');
     }
 
     public function showCav(){
