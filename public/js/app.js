@@ -37747,7 +37747,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [
-      _c("a", { attrs: { href: "#", target: "_blank" } }, [_vm._v("GitHub")])
+      _c(
+        "a",
+        { attrs: { href: "https://github.com/lasko44", target: "_blank" } },
+        [_vm._v("GitHub")]
+      )
     ])
   }
 ]
@@ -37927,7 +37931,11 @@ var staticRenderFns = [
       _c("li", [_c("a", { attrs: { href: "/resume" } }, [_vm._v("Resumé")])]),
       _vm._v(" "),
       _c("li", [
-        _c("a", { attrs: { href: "#", target: "_blank" } }, [_vm._v("GitHub")])
+        _c(
+          "a",
+          { attrs: { href: "https://github.com/lasko44", target: "_blank" } },
+          [_vm._v("GitHub")]
+        )
       ])
     ])
   }
