@@ -37687,7 +37687,7 @@ var render = function() {
         "compass-rotate-left": _vm.showTri,
         "compass-rotate-right": _vm.rotateBack
       },
-      attrs: { alt: "merik compass", src: "images/comp.png", height: "150" },
+      attrs: { alt: "merik compass", src: "/images/comp.png", height: "150" },
       on: {
         click: function($event) {
           _vm.showTri = !_vm.showTri
@@ -37746,7 +37746,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("GitHub")])])
+    return _c("li", [
+      _c("a", { attrs: { href: "#", target: "_blank" } }, [_vm._v("GitHub")])
+    ])
   }
 ]
 render._withStripped = true
@@ -37904,7 +37906,7 @@ var render = function() {
           expression: "triangleVisible"
         }
       ],
-      staticClass: "triangle"
+      staticClass: "m-triangle"
     }),
     _vm._v(" "),
     _vm._m(0)
@@ -37915,7 +37917,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "m-nav" }, [
+    return _c("ul", { staticClass: "mm-nav" }, [
       _c("li", [_c("a", { attrs: { href: "/about" } }, [_vm._v("About Me")])]),
       _vm._v(" "),
       _c("li", [
@@ -37924,7 +37926,9 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("li", [_c("a", { attrs: { href: "/resume" } }, [_vm._v("Resumé")])]),
       _vm._v(" "),
-      _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("GitHub")])])
+      _c("li", [
+        _c("a", { attrs: { href: "#", target: "_blank" } }, [_vm._v("GitHub")])
+      ])
     ])
   }
 ]
@@ -37957,7 +37961,7 @@ var render = function() {
       _vm._v(" "),
       _c("a", { staticClass: "m-card-link", attrs: { href: _vm.link } }, [
         _c("img", {
-          staticClass: "m-card-img img img-fluid",
+          staticClass: "m-card-img",
           staticStyle: { "margin-top": "10px" },
           attrs: { src: _vm.image, alt: "" }
         })

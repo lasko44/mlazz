@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div v-show="triangleVisible" class="triangle"></div>
-        <ul class="m-nav">
+        <div v-show="triangleVisible" class="m-triangle"></div>
+        <ul class="mm-nav">
             <li><a href="/about">About Me</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/resume">Resumé</a></li>
-            <li><a href="#">GitHub</a></li>
+            <li><a href="#" target="_blank">GitHub</a></li>
         </ul>
     </div>
 </template>

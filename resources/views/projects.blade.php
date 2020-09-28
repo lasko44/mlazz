@@ -10,7 +10,7 @@
         <div class="row">
             <p style="margin-left: 4vw;">Here is where I can talk about some stuff about the projects</p>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center proj-row">
             <project-card :image="'{{asset('images/cav.png')}}'"
                           :title="'CAV Leasing'"
                           :link="'{{route('show.cav')}}'"

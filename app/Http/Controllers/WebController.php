@@ -21,6 +21,10 @@ class WebController extends Controller
         return view('projects');
     }
 
+    public function indexResume(){
+
+    }
+
     public function showCav(){
         return view('cav');
     }
