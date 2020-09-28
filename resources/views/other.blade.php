@@ -10,8 +10,15 @@
             <img class="img-fluid" src="{{asset('images/mkc.png')}}" alt="Other" width="600">
         </div>
 
-        <h2>The Problem</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        <h2 style="padding-left: 25px;">The Problem</h2>
+        <p style="padding: 25px;">The client is a car wholesaler with clients around the world. CAV Leasing's
+            client base has been growing and needed a more efficient way of sharing the inventory of cars
+            with potential customers. This site allows for clients to see and search CAV's
+            current car inventory. On the backend the client needed a efficient way to bulk add car
+            data, images, and prices.
+        </p>
+        <h2 style="padding-left: 25px;">The Solution</h2>
+        <p style="padding: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -19,17 +26,8 @@
             dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id
             est laborum.</p>
-        <h2>The Solution</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.</p>
-        <h2>The Technologies</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        <h2 style="padding-left: 25px;">The Technologies</h2>
+        <p style="padding: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis

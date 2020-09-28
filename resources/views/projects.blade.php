@@ -8,7 +8,7 @@
     <page-title :title="'Projects'"></page-title>
     <div class="page-content">
         <div class="row">
-            <p style="margin-left: 4vw;">Here is where I can talk about some stuff about the projects</p>
+            <p style="margin-left: 4vw;">Here are some projects outside of school for clients or an internship</p>
         </div>
         <div class="row justify-content-center proj-row">
             <project-card :image="'{{asset('images/cav.png')}}'"

@@ -5,41 +5,42 @@
 @section('content')
     <comp-nav></comp-nav>
     <page-title :title="'CAV LEASING'"></page-title>
-    <div class="page-content">
+    <div class="page-content" >
         <div class="row justify-content-center">
             <img class="img-fluid" src="{{asset('images/cav.png')}}" alt="CAV LEASING" width="600">
         </div>
         <div class="row justify-content-center">
-            <a href="#" target="_blank" class="btn btn-dark" style="margin: 10px;">View Site</a>
+            <a href="http://cav-leasing.herokuapp.com/" target="_blank" class="btn btn-dark" style="margin: 10px;">View Site</a>
             <a href="#" target="_blank" class="btn btn-dark" style="margin: 10px;">View Code</a>
         </div>
-        <h2>The Problem</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.</p>
-        <h2>The Solution</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.</p>
-        <h2>The Technologies</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.</p>
+
+        <h2 style="padding-left: 25px;">The Problem</h2>
+        <p style="padding: 25px;">The client is a car wholesaler with clients around the world. CAV Leasing's
+            client base has been growing and needed a more efficient way of sharing the inventory of cars
+            with potential customers. This site allows for clients to see and search CAV's
+            current car inventory. On the backend the client needed a efficient way to bulk add car
+            data, images, and prices.
+        </p>
+        <h2 style="padding-left: 25px;">The Solution</h2>
+        <p style="padding: 25px;">I built this site so that finding cars and inquiring about them was easy
+            for the visitors and the client to manage the interest in specific cars. Users are
+            able to browse through the cars and contact CAV about specific cars that they are
+            interested in. I also made it as easy as possible for inventory management. I tailored uploading
+            cars to fit the needs of the client. Because they are a wholesaler, the needed the ability
+            to bulk upload inventory. I made this possible by utilizing their current inventory tracking
+            system, excel sheets, and making it possible to upload those sheets to populate the database.
+            <br> I then had to figure out how to upload hundreds of images to site at one time and
+            match them to the correct car. I used simple SQL relationships based on the car's vin number to
+            ensure that the correct images ended up with the correct car. The client is also able to price, upload,
+            and publish individual cars from the admin panel.
+        </p>
+        <h2 style="padding-left: 25px;">The Technologies</h2>
+        <p style="padding: 25px;">For this project I used the PHP framework Laravel.
+            Along with Laravel on the backend I used Amazon S3 to store the car images as
+            well as MySQL. On the frontend I used Vue.js, Sass and Bootstrap. For the design
+            process and prototyping I utilized Figma, Adobe Photoshop, and Adobe Illustrator.
+        </p>
+
         <div class="row justify-content-center" style="margin: 25px;">
             <h5><span>
             <a href="https://getbootstrap.com/" title="Visit getbootstrap.com">
