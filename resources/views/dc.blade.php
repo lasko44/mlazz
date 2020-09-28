@@ -11,7 +11,7 @@
         </div>
         <div class="row justify-content-center">
             <a href="https://www.cultured-dc.com/" target="_blank" class="btn btn-dark" style="margin: 10px;">View Site</a>
-            <a href="#" target="_blank" class="btn btn-dark" style="margin: 10px;">View Code</a>
+            <a href="https://github.com/lasko44/Cultured" target="_blank" class="btn btn-dark" style="margin: 10px;">View Code</a>
         </div>
         <h2 style="padding-left: 25px;">The Problem</h2>
         <p style="padding: 25px;">This client was someone who wanted to grow her already growing

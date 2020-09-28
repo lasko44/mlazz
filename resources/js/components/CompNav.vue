@@ -12,7 +12,7 @@
             <li><a href="/about">About Me</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/resume">Resumé</a></li>
-            <li><a href="#" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/lasko44" target="_blank">GitHub</a></li>
         </ul>
     </div>
 </template>
